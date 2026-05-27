@@ -1,0 +1,89 @@
+AI Uses Report
+Plugin: WS Team Block View(Debyendu)
+Slug/Text Domain: blockforge-team-showcase
+Repository Path: /webspace/dev.wordpress-developer.us/public_html/flex-power/wp-content/plugins/ws-team-block-view
+Report Date: 2026-05-27
+
+1. Purpose of this report
+This file documents where AI assistance appears to have been used in this plugin, based on:
+- the explicit "AI Usage Report" section already present in README.md
+- inspection of the plugin source files in this repository
+
+This report is a documentation artifact only. It does not prove authorship line-by-line and should be treated as a project disclosure summary.
+
+2. Declared AI-assisted work
+The existing README states that AI was used to help with:
+- plugin architecture and scaffolding
+- dynamic block PHP classes
+- Gutenberg editor control logic
+- frontend AJAX, modal, and interaction scripts
+- documentation and security notes
+
+3. Prompts disclosed in README.md
+The following prompts are already documented in README.md:
+
+1. Create a custom WordPress Block widget plugin named "WS Team Block View(Debyendu)" with plugin slug "blockforge-team-showcase"...
+2. Generate a modular OOP architecture for a dynamic Gutenberg team showcase block with AJAX filtering, popup modal, and load more pagination.
+3. Provide secure WordPress sanitization, escaping, nonce verification, and responsive CSS/JS structure for the block plugin.
+
+4. Files likely produced or significantly assisted by AI
+Based on the README disclosure and repository inspection, AI assistance likely contributed to these files:
+
+- blockforge-team-showcase.php
+  Bootstrap plugin file and constant definitions.
+
+- includes/class-plugin.php
+  Main plugin loader, singleton bootstrap, and asset registration.
+
+- includes/blocks/class-team-showcase-block.php
+  Dynamic block registration, render callback, block markup, modal wrapper, localization, and frontend data attributes.
+
+- includes/ajax/class-team-showcase-ajax.php
+  AJAX endpoint registration, nonce verification, request parsing, filtering, pagination response.
+
+- includes/helpers/class-utils.php
+  Shared sanitization, filtering helpers, department extraction, boolean normalization, and style building.
+
+- assets/js/team-showcase-editor.js
+  Gutenberg editor sidebar controls, repeater-style team member management, media selection, and server-side preview integration.
+
+- assets/js/team-showcase.js
+  Frontend filtering, search, load more, modal rendering, social icon mapping, tilt effect, and GSAP-ready animation hook.
+
+- assets/css/team-showcase.css
+  Frontend layout and block styling.
+
+- assets/css/team-showcase-editor.css
+  Editor-facing block styling.
+
+- includes/blocks/team-showcase/block.json
+  Block metadata and attribute schema.
+
+- README.md
+  Architecture explanation, feature list, security notes, and the original AI disclosure section.
+
+5. Nature of AI use
+The observed usage appears to be code-generation and drafting assistance, not runtime AI functionality.
+
+There is no evidence in this plugin of:
+- calls to LLM APIs
+- inference at runtime
+- AI-powered user-facing features
+- model weights, embeddings, or generated content stored for visitors
+
+6. Human review still required
+Even with AI-assisted generation, the plugin should still be reviewed by a developer for:
+- WordPress coding standards and escaping consistency
+- editor and frontend behavior in a live WordPress install
+- accessibility of modal, keyboard interactions, and filter controls
+- performance under larger team datasets
+- internationalization completeness
+- security validation for future changes
+
+7. Provenance note
+This report was assembled from repository contents available on 2026-05-27, especially the existing disclosure in README.md. If the project owner wants a stricter provenance record, they should supplement this file with:
+- author confirmation
+- commit references
+- exact model/tool names used
+- dates of AI-assisted generations
+- manual review sign-off

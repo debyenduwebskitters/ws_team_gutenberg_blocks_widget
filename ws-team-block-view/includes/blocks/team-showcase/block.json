@@ -1,0 +1,139 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "blockforge/team-showcase",
+  "version": "1.0.0",
+  "title": "WS Team Block View(Debyendu)",
+  "category": "widgets",
+  "icon": "groups",
+  "description": "Responsive team showcase block with filtering, modal details, and AJAX pagination.",
+  "textdomain": "blockforge-team-showcase",
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "margin": true,
+      "padding": true
+    }
+  },
+  "attributes": {
+    "teamMembers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "default": ""
+          },
+          "designation": {
+            "type": "string",
+            "default": ""
+          },
+          "department": {
+            "type": "string",
+            "default": ""
+          },
+          "shortBio": {
+            "type": "string",
+            "default": ""
+          },
+          "profileImage": {
+            "type": "string",
+            "default": ""
+          },
+          "socialLinks": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "network": {
+                  "type": "string",
+                  "default": ""
+                },
+                "url": {
+                  "type": "string",
+                  "default": ""
+                }
+              }
+            },
+            "default": []
+          },
+          "experience": {
+            "type": "string",
+            "default": ""
+          },
+          "buttonText": {
+            "type": "string",
+            "default": ""
+          },
+          "buttonUrl": {
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "default": []
+    },
+    "gridColumns": {
+      "type": "number",
+      "default": 3
+    },
+    "itemsPerPage": {
+      "type": "number",
+      "default": 9
+    },
+    "cardAlignment": {
+      "type": "string",
+      "default": "left"
+    },
+    "cardHeight": {
+      "type": "string",
+      "default": "100%"
+    },
+    "imagePosition": {
+      "type": "string",
+      "default": "top"
+    },
+    "popupToggle": {
+      "type": "boolean",
+      "default": true
+    },
+    "cardBackground": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": 24
+    },
+    "hoverEffect": {
+      "type": "string",
+      "default": "lift"
+    },
+    "buttonBackground": {
+      "type": "string",
+      "default": "#111827"
+    },
+    "buttonTextColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "typographyFontSize": {
+      "type": "number",
+      "default": 16
+    },
+    "typographyLineHeight": {
+      "type": "string",
+      "default": "1.6"
+    },
+    "darkModeToggle": {
+      "type": "boolean",
+      "default": true
+    },
+    "acfFieldGroup": {
+      "type": "string",
+      "default": ""
+    }
+  }
+}
